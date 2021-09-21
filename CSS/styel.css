@@ -1,0 +1,69 @@
+.home {
+    background-image: url(../imgs/intro-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.home::before {
+    content: "";
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+
+}
+
+.home_header {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    
+}
+
+.home_header h1,h3 { 
+    color: snow;
+}
+nav a {
+    color: wheat !important; 
+  
+}
+
+
+#navbarNavDropdown a {
+
+    position: relative;
+}
+#navbarNavDropdown a:before {
+    content: "";
+    height:3px;
+    background-color: #fff;
+    position: absolute;
+  bottom: 0;
+    width:0%;
+    transition: all .3s;
+
+}
+
+#navbarNavDropdown a:hover:before {
+
+    width: 60%;
+}
+
+#navbarNavDropdown .aaa:before {
+    content: "";
+    height:3px;
+    background-color: #fff;
+    position: absolute;
+  bottom: 0;
+    width:60%;
+    
+
+}
+
